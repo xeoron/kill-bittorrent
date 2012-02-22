@@ -9,7 +9,5 @@
 on run
 	try
 		do shell script "/bin/bash; ps x | grep -i bittorrent | grep -v \"+\" |awk '{ print $1 }' |xargs kill -9 2>/dev/null && 1>/dev/null"
-	on error StrError
-		display dialog "BitTorrent was not running." with title "KillBittorrent..."
 	end try
 end run
