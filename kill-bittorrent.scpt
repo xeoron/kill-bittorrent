@@ -1,13 +1,24 @@
 (* Jason Campipsi
-   name: kill-bittorrent
+   name: kill-utorrent
    version: v0.1.2
    date: 12.4.11
    Realsed under the GPL 3
-   Purpose: version 7.2.2 Mac build of bittorrent does not always close, and sort of hangs infinitely instead of shutting off when you tell it. So this program is meant to kill the zombie program
+   Purpose: Mac build of bittorrent does not always close, and sort of hangs infinitely instead of shutting off when you tell it. 
+   So this program is meant to kill the zombie program.
 *)
-
+property program : "bittorrent" --search for this keyword and tell the program to shutdown now!
 on run
+	set env to "/bin/bash;"
+	set ps to "ps x |"
+	set grep to "grep -i " & program & " |"
+	set grepOmit to "grep -v \"grep\" |"
+	set awk to "awk '{ print $1 }' |"
+	set xargs to "xargs kill -9"
+	set ignoreErrors to ">/dev/null"
+	set cmd to env & space & ps & space & grep & space & grepOmit & space & awk & space & xargs & space & ignoreErrors
 	try
-		do shell script "/bin/bash; ps x | grep -i bittorrent | grep -v \"+\" |awk '{ print $1 }' |xargs kill -9 2>/dev/null && 1>/dev/null"
+		do shell script cmd
+	on error StrError
+		return #display dialog "BitTorrent was not running." with title "KillBittorrent..."
 	end try
 end run
