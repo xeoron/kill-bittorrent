@@ -1,3 +1,15 @@
+Kill-bittorent
+=====
 Purpose: a simple app that will kill the offical BitTorrent program when it refuses to quit or is not closing fast enough.
 
-Requirements: Mac OS X and AppleScript Editor to compile.
+The code is easily tweaked to target any program you may want a kill switch for. Simple change 'bittorrent' line in the code
+    property program : "bittorrent" --search for this keyword and tell the program to shutdown now!
+
+
+Requirements: 
+=====
+Mac OS X and AppleScript Editor to compile.
+
+Released: 
+=====
+under the GPL 3+
