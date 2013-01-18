@@ -2,7 +2,7 @@
    name: kill-utorrent
    version: v0.1.2
    date: 12.4.11
-   Realsed under the GPL 3
+   Released under the GPL 3
    Purpose: Mac build of bittorrent does not always close, and sort of hangs infinitely instead of shutting off when you tell it. 
    So this program is meant to kill the zombie program.
 *)
