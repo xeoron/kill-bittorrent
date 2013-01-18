@@ -1,3 +1,3 @@
 Purpose: a simple app that will kill the offical BitTorrent program when it refuses to quit or is not closing fast enough.
 
-Requirements: Mac OS X, AppleScript Editor to compile.
+Requirements: Mac OS X and AppleScript Editor to compile.
