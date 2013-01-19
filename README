@@ -9,6 +9,19 @@ Modify to make a kill switch for any program you like. Simple change 'bittorrent
 to anything you want within this line of code:
   property program : "bittorrent"
 
+  to:
+  property program : "utorrent"
+  or
+  property program : "firefox"
+  or
+  property program : "google chrome"
+  or
+  property program : "itunes"
+  or
+  property program : "plex"
+  or
+  property program : "wine"
+  etc
 
 Requirements: 
 =====
