@@ -6,7 +6,7 @@ refuses to quit or is not closing fast enough.
 Target Other Programs:
 =====
 Modify to make a kill switch for any program you like. Simple change 'bittorrent' 
-to anything you want within this line of code:
+to different process name within this line of code:
   property program : "bittorrent"
 
   to
