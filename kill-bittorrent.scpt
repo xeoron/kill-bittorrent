@@ -1,4 +1,4 @@
-(* Jason Campipsi
+(* Jason Campisi
    name: kill-utorrent
    version: v0.1.2
    date: 12.4.11
