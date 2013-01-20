@@ -3,7 +3,7 @@ Kill-bittorent
 Purpose: a simple app that will kill the offical BitTorrent program when it 
 refuses to quit or is not closing fast enough.
 
-Target Other Programs:
+Target Other Programs
 =====
 Modify to make a kill switch for any program you like. Simple change 'bittorrent' 
 to different process name within this line of code:
