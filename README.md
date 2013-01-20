@@ -23,7 +23,7 @@ to different process name within this line of code:
   property program : "wine"
   etc
 
-Requirements: 
+Requirements
 =====
 Mac OS X and AppleScript Editor to compile.
 
