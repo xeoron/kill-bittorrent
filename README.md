@@ -7,21 +7,34 @@ Target Other Programs
 =====
 Modify to make a kill switch for any program you like. Simple change 'bittorrent' 
 to different process name within this line of code:
-  property program : "bittorrent"
+  
+    property program : "bittorrent"
 
   to
-  property program : "utorrent"
+  
+    property program : "utorrent"
+	
   or
-  property program : "firefox"
+  
+    property program : "firefox"
+  
   or
-  property program : "google chrome"
+  
+    property program : "google chrome"
+  
   or
-  property program : "itunes"
+  
+    property program : "itunes"
+  
   or
-  property program : "plex"
+  
+    property program : "plex"
+  
   or
-  property program : "wine"
-  etc
+  
+    property program : "wine"
+  
+  etc., then rename and compile the applescript program.
 
 Requirements
 =====
