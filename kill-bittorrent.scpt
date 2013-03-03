@@ -1,5 +1,5 @@
 (* Jason Campisi
-   name: kill-utorrent
+   name: kill-bittorrent
    version: v0.1.2
    date: 12.4.11
    Released under the GPL 3
