@@ -19,6 +19,6 @@ on run
 	try
 		do shell script cmd
 	on error StrError
-		return display dialog "Something is not right Error." with title "KillBittorrent..."
+		return display dialog "Something is not right Error." with title "Kill" space & program & "..."
 	end try
 end run
