@@ -1,6 +1,6 @@
 (* Jason Campisi
    name: kill-bittorrent
-   version: v1
+   version: v1.1
    date: 10.18.13
    Released under the GPL 3
    Purpose: Mac build of bittorrent does not always close, and sort of hangs infinitely instead of shutting off when you tell it. 
@@ -23,7 +23,9 @@ on open these_items
 	set prog to text item 3 of prog
 	set text item delimiters to "."
 	set prog to text item 1 of prog
-	copy prog to program
+	if prog is not "" then
+		copy prog to program
+	end if
 	run
 end open
 
