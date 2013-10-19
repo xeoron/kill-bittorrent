@@ -1,40 +1,10 @@
 Kill-bittorent
 =====
-Purpose: a simple app that will kill the offical BitTorrent program when it 
-refuses to quit or is not closing fast enough.
+Purpose: a simple app that will kill the offical BitTorrent program when it refuses to quit or is not closing fast enough. It uses 2 different methods to get the job done, so if 1 fails, it will try another way.
 
 Target Other Programs
 =====
-Modify to make a kill switch for any program you like. Simple change 'bittorrent' 
-to different process name within this line of code:
-  
-    property program : "bittorrent"
-
-  to
-  
-    property program : "utorrent"
-	
-  or
-  
-    property program : "firefox"
-  
-  or
-  
-    property program : "google chrome"
-  
-  or
-  
-    property program : "itunes"
-  
-  or
-  
-    property program : "plex"
-  
-  or
-  
-    property program : "wine"
-  
-  etc., then rename and compile the applescript program.
+To reprogram which program it shutdowns, merely drop the program onto this one, and it will replace the default program name to kill.
 
 Requirements
 =====
