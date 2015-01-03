@@ -44,7 +44,7 @@ on run
 		set grepOmit to "grep -v \"grep\" |"
 		set awk to "awk '{ print $1 }' |"
 		set xargs to "xargs kill -9"
-		set ignoreErrors to ">/dev/null"
+		set ignoreErrors to ">/dev/null 2>&1 &"
 		set cmd to env & space & ps & space & grep & space & grepOmit & space & awk & space & xargs & space & ignoreErrors
 		do shell script cmd
 	end try
